@@ -6,19 +6,19 @@ import {
   DeleteButton,
 } from 'react-admin';
 
-const NewsList = (props) => {
+const ProjectList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
-        <TextField source="date" />
+        <TextField source="title" />
         <TextField source="description" />
         <TextField source="image" />
-        <TextField source="source" />
-        <EditButton basePath="/news" />
-        <DeleteButton basePath="/news" />
+        <TextField source="url" />
+        <EditButton basePath="/projects" />
+        <DeleteButton basePath="/projects" />
       </Datagrid>
     </List>
   );
 };
 
-export default NewsList;
+export default ProjectList;
